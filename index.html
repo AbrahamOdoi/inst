@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Revenue Collector</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.4.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700"> -->
+		<script src="js/jquery.js"></script>
+		<script src="js/script.js"></script>
+		<script src="_assets/js/index.js"></script>
+		<script src="js/jquery.mobile-1.4.4.min.js"></script>
+	</head>
+	<body  style="font-family:Arial Black; background: #57004f;">
+
+		<div data-role="page" id="homepage"  style="font-family:Arial Black; background: #57004f;">
+
+			<div data-role="header" data-position='fixed' data-theme='b'>
+				<!-- <h1>Instania</h1> -->
+			</div><!-- /header -->
+
+			<div role="main" data-role='content' class="ui-content">
+				<div id="splash">
+					<h1 class="splash" id="splahLabel1">INSTANIA</h1>
+					<h2 class="splash" id="splahLabel2">HEALTH<br/>SOLUTION</h2>
+				</div>
+			</div><!-- /content -->
+
+			<div data-role="footer" data-position="fixed" data-theme='b'>
+				<!-- <h1>WELCOME</h1> -->
+			</div>
+			<!-- /footer -->
+		</div><!-- /page -->
+	</body>
+	<script>
+		$(document).on("pagecreate", function() {
+			$("#splahLabel1").slideDown(3000, function() {
+				$("#splahLabel2").fadeIn(2000, function() {
+					window.location = 'http://216.224.161.207/instannia/mainpage.php';
+				});
+			});
+		});
+	</script>
+</html>
