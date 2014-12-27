@@ -17,7 +17,7 @@
 	</head>
 	<body  style="font-family:Arial Black; background: #57004f;">
 
-		<div data-role="page" id="homepage"  style="font-family:Arial Black; background: #57004f;">
+		<div data-role="page" id="homepage"  style="font-family:Arial Black; background: white;">
 
 			<div data-role="header" data-position='fixed' data-theme='b'>
 				<!-- <h1>Instania</h1> -->
@@ -25,8 +25,12 @@
 
 			<div role="main" data-role='content' class="ui-content">
 				<div id="splash">
-					<h1 class="splash" id="splahLabel1">INSTANIA</h1>
-					<h2 class="splash" id="splahLabel2">HEALTH<br/>SOLUTION</h2>
+					<img src="splash.png" width="100%"  class="splash" id="splahLabel1" style="display: none;"/>
+					<h2 class="splash" id="splahLabel2">INSTANIA
+					<br/>
+					HEALTH
+					<br/>
+					SOLUTION</h2>
 				</div>
 			</div><!-- /content -->
 
@@ -39,9 +43,9 @@
 	<script>
 		$(document).on("pagecreate", function() {
 			$("#splahLabel1").slideDown(3000, function() {
-				$("#splahLabel2").fadeIn(2000, function() {
+				// $("#splahLabel2").fadeIn(2000, function() {
 					window.location = 'http://216.224.161.207/instannia/mainpage.php';
-				});
+				// });
 			});
 		});
 	</script>
